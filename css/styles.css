@@ -1,17 +1,25 @@
 /*--master styles--*/
 
 .menu{
-	padding:10px;
+	padding:5px;
 }
 
 .menu li{
 	display:inline;
 	color:black;
 	font-size:24px;
-	margin-left:20px;
+	margin-left:30px;
 }
 
 .menu li:hover{
 	color:#FC9D56;
 	transition:all .3s;
+}
+
+.menu-icon{
+	margin:0px;
+}
+
+.menu-icon:hover{
+	cursor:pointer;
 }
