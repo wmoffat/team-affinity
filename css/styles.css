@@ -1,20 +1,28 @@
 /*--master styles--*/
 /*importing lato font*/
 @import url('https://fonts.googleapis.com/css?family=Lato');
-/*importing raleway font*/
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*importing nunito font*/
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 .menu{
+	background-color:#eaeaea;
+	position:fixed;
+	top:0%;
+	width:100%;
+	font-family:'Nunito', sans-serif;
+	font-weight:600;
+	overflow:hidden;
 	padding:5px;
-	font-family:'Raleway', sans-serif;
 }
 
 .menu li{
-	display:inline;
+	display:inline-block;
 	color:black;
 	font-size:24px;
 	margin-left:30px;
-	font-family:'Raleway', sans-serif;
+	font-family:'Nunito', sans-serif;
+	font-weight:600;
+	margin-top:5px;
 }
 
 .menu li:hover{
@@ -22,8 +30,14 @@
 	transition:all .3s;
 }
 
+.menu-content-divider{
+	height:100px;
+}
+
 .menu-icon{
 	margin:0px;
+	padding:0px;
+	vertical-align:middle;
 }
 
 .menu-icon:hover{
@@ -33,4 +47,44 @@
 p{
 	font-family:'Lato', sans-serif;
 	color:#333333;
+}
+
+#irb-link{
+	color:#FC9D56;
+	text-decoration:none;
+	transition:all .3s;
+}
+
+#irb-link:hover{
+	transition:all .3s;
+	text-decoration:underline;
+	opacity:0.8;
+}
+
+#irb-link a:visited{
+	text-decoration:none;
+}
+
+#blog-button{
+	text-align:center;
+	font-family:'Nunito', sans-serif;
+	font-weight:600;
+	text-transform:uppercase;
+	background-color:#FC9D56;
+	font-size:18px;
+	padding:20px;
+	border:3px solid white;
+	transition:all .3s;
+}
+
+#blog-button:hover{
+	cursor:pointer;
+	background-color:#333333;
+	color:white;
+}
+
+/*style for blog post*/
+.blog-entry{
+	border-left:2px solid #C3ABC3;
+	padding-left:10px;
 }

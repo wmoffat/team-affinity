@@ -14,6 +14,7 @@
 <!--master styles-->
 <link href="css/styles.css" type="text/css" rel="stylesheet"/>
 
+
 <style type="text/css">
 
 body{
@@ -29,18 +30,32 @@ body{
 <body>
 
 <!--navigation bar-->
-<div style="width:100%; background-color:#EAEAEA;">
-	<ul class="menu">
-		<li><img class="menu-icon" src="images/logo.png" width="30px" onClick="Redirect();"/></li>
-		<a href="index.html" class="menu-link" style="text-decoration:none;"><li>Home</li></a>
-		<a href="blog.html" class="menu-link" style="text-decoration:none;"><li>Blog</li></a>
-		<a href="team.html" class="menu-link" style="text-decoration:none;"><li>The Team</li></a>
-	</ul>
-</div>
+<ul class="menu">
+	<li><img class="menu-icon" src="images/logo-with-name.png" width="30px" onClick="Redirect();"/></li>
+	<a href="index.html" class="menu-link" style="text-decoration:none;"><li>Home</li></a>
+	<a href="blog.html" class="menu-link" style="text-decoration:none;"><li>Blog</li></a>
+	<a href="team.html" class="menu-link" style="text-decoration:none;"><li>The Team</li></a>
+</ul>
+<div class="menu-content-divider"></div>
 <!--end navigation bar-->
 
-<div style="margin-top:50px">
-	<h1 style="text-transform: uppercase; text-align:center; color:white">Team <span><img src="images/logo.png" style="margin:auto; display:inline; text-align:center;" width="20%"/></span>Affinity</h1>
+
+<!--logo and team name-->
+<div>
+	<h1 style="text-transform: uppercase; text-align:center; color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team <span><img src="images/logo.png" style="margin:auto; display:inline; text-align:center;" id="header-logo" width="20%"/></span>Affinity</h1>
+</div>
+
+<hr style="width:75%"/>
+
+<!--problem statement-->
+<div style="margin-top:75px;">
+	<h4 style="text-align:center; color:white;">The current <a href="https://www.irb.purdue.edu/" id="irb-link">IRB</a> research approval process is not efficient and causes frustration for users.</h4>
+</div>
+
+
+<!--blog button-->
+<div style="text-align:center; margin-top:75px;">
+	<span id="blog-button" onClick="blogRedirect();">Follow our progress!</span>
 </div>
 
 
@@ -49,6 +64,10 @@ body{
 	//redirect menu icon click to main page
 	function Redirect(){
 	    window.location = "index.html"
+	}
+
+	function blogRedirect(){
+		window.location = "blog.html"
 	}
 
 </script>
