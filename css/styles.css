@@ -1,2 +1,17 @@
 /*--master styles--*/
 
+.menu{
+	padding:10px;
+}
+
+.menu li{
+	display:inline;
+	color:black;
+	font-size:24px;
+	margin-left:20px;
+}
+
+.menu li:hover{
+	color:#FC9D56;
+	transition:all .3s;
+}
