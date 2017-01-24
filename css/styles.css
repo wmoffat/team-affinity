@@ -88,3 +88,67 @@ p{
 	border-left:2px solid #C3ABC3;
 	padding-left:10px;
 }
+
+/*response - mobile styles*/
+.sidenav{
+	display:none;
+}
+
+#hamburger-nav{
+	display:none;
+}
+
+
+@media screen and (max-width:600px){
+	.menu{
+		display:none;
+	}
+
+	.sidenav{
+		height:100%;
+		width:0;
+		position:fixed;
+		z-index:1;
+		top:0;
+		left:0;
+		background-color:rgba(234,234,234,0.97);
+		color:#333333;
+		overflow-x: hidden;
+		transition:0.5s;
+		text-align:center;
+		padding-top:60px;
+		display:block;
+	}
+
+	.sidenav a{
+		padding:8px 8px 8px 8px;
+		text-decoration:none;
+		font-size:25px;
+		color:#333333;
+		display:block;
+		transition:.3s;
+	}
+
+	.sidenav a:hover{
+		color:#FC9D56;
+		text-decoration:underline;
+	}
+
+	.sidenav .close-button{
+		position:absolute;
+		top:0;
+		right:25px;
+		font-size:36px;
+		margin-left:50px;
+	}
+
+	#hamburger-nav{
+		display:block;
+		position:fixed;
+		top:15px;
+		left:15px;
+		color:white;
+	}
+}
+
+

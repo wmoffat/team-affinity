@@ -37,6 +37,19 @@ body{
 <div class="menu-content-divider"></div>
 <!--end navigation bar-->
 
+<!--mobile slide out menu-->
+<div id="mobile-sidenav" class="sidenav">
+	<a href="javascript:void(0)" class="close-button" onClick="closeNav()">&times;</a>
+	<a href="index.html">Home</a>
+	<a href="blog.html">Blog</a>
+	<a href="team.html">The Team</a>
+</div>
+
+<!--mobile hamburger nav-->
+<span id="hamburger-nav" onClick="openNav()" style="font-size:30px; cursor:pointer;"><img src="images/menu-black.svg" width="50px"/></span>
+
+
+<!--****************************************************************************************************-->
 
 <script type="text/javascript">
 
@@ -44,6 +57,14 @@ body{
 	function Redirect(){
 	    window.location = "index.html"
 	}
+
+	function openNav(){
+		document.getElementById("mobile-sidenav").style.width = "100%";
+	}
+
+	function closeNav(){
+		document.getElementById("mobile-sidenav").style.width = "0%";
+	}	
 
 </script>
 
