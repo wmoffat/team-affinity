@@ -83,6 +83,11 @@ p{
 	color:white;
 }
 
+.img-circle{
+	border-radius:50%;
+	border:3px solid #333333;
+}
+
 /*style for blog post*/
 .blog-entry{
 	border-left:2px solid #C3ABC3;
