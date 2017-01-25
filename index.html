@@ -32,6 +32,20 @@ body{
 	margin:15px;
 }
 
+#mobile-header{
+	display:none;
+}
+
+@media screen and (max-width:600px){
+	#mobile-header{
+		display:block;
+	}
+
+	#desktop-header{
+		display:none;
+	}
+}
+
 </style>
 
 </head>
@@ -64,8 +78,14 @@ body{
 <!--****************************************************************************************************-->
 
 <!--logo and team name-->
-<div>
-	<h1 style="text-transform: uppercase; text-align:center; color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team <span><img src="images/logo.png" style="margin:auto; display:inline; text-align:center;" id="header-logo" width="20%"/></span>Affinity</h1>
+<div id="desktop-header">
+	<h1 style="text-transform: uppercase; text-align:center; color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team <span><img src="images/logo.png" style="margin:auto; display:inline; text-align:center;" id="header-logo" width="20%"/></span>Affinity</h1>
+</div>
+
+<!--mobile logo and team name-->
+<div id="mobile-header">
+	<h1 style="text-transform:uppercase; text-align:center; color:white;">Team Affinity</h1>
+	<img src="images/logo.png" style="margin:auto; display:block; text-align:center;" width="20%"/>
 </div>
 
 <hr style="width:75%"/>
