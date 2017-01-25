@@ -25,6 +25,33 @@ body{
 	margin:15px;
 }
 
+@media screen and (max-width:600px){
+	.row{
+		margin:15px;
+		padding:0px;
+	}
+
+	#first-profile{
+		margin-bottom:20px;
+	}
+
+	#third-profile{
+		margin-bottom:20px;
+	}
+
+	#second-row{
+		margin-top:0px;
+		padding:0px;
+	}
+
+	#first-row{
+		margin-bottom:-50px;
+	}
+
+	#clear-space{
+		margin-top:-20px;
+	}
+}
 
 
 </style>
@@ -62,15 +89,15 @@ body{
 <hr style="width:75%; color:#FC9D56;"/>
 
 <!--start of first row of profiles-->
-<div class="row">
+<div class="row" id="first-row">
 	<div class="two columns">&nbsp;</div>
-	<div class="four columns">
+	<div class="four columns" id="first-profile">
 		<img src="images/sam-cropped.jpg" class="img-circle" width="100px" height="100px" style="float:left; margin-right:20px;"/>
 		<h3 style="float:middle; margin:0px; padding:0px;">Sam Ensign</h3>
 		<p style="float:middle; margin:0px; padding:0px;">srensign@purdue.edu</p>
 		<a href="http://www.samuelensign.com" style="float:middle; margin:0px; padding:0px; font-family:'Lato', sans-serif;">Sam's Portfolio</a>
 	</div>
-	<div class="four columns">
+	<div class="four columns" id="second-profile">
 		<img src="images/sam-cropped.jpg" class="img-circle" width="100px" height="100px" style="float:left; margin-right:20px;"/>
 		<h3 style="float:middle; margin:0px; padding:0px;">Max Moffat</h3>
 		<p style="float:middle; margin:0px; padding:0px;">wmoffat@purdue.edu</p>
@@ -80,15 +107,15 @@ body{
 </div>
 
 <!--start of second row of profiles-->
-<div class="row" style="margin-top:50px;">
-	<div class="two columns">&nbsp;</div>
-	<div class="four columns">
+<div class="row" style="margin-top:50px;" id="second-row">
+	<div class="two columns" id="clear-space">&nbsp;</div>
+	<div class="four columns" id="third-profile">
 		<img src="images/sam-cropped.jpg" class="img-circle" width="100px" height="100px" style="float:left; margin-right:20px;"/>
 		<h3 style="float:middle; margin:0px; padding:0px;">Lingyi Zhang</h3>
 		<p style="float:middle; margin:0px; padding:0px;">zhan1540@purdue.edu</p>
 		<a href="www.samuelensign.com" style="float:middle; margin:0px; padding:0px; font-family:'Lato', sans-serif;">Lingyi's Portfolio</a>
 	</div>
-	<div class="four columns">
+	<div class="four columns" id="fourth-profile">
 		<img src="images/sam-cropped.jpg" class="img-circle" width="100px" height="100px" style="float:left; margin-right:20px;"/>
 		<h3 style="float:middle; margin:0px; padding:0px;">Jackson Tibbett</h3>
 		<p style="float:middle; margin:0px; padding:0px;">jtibbett@purdue.edu</p>
