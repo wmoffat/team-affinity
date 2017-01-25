@@ -14,6 +14,11 @@
 <!--master styles-->
 <link href="css/styles.css" type="text/css" rel="stylesheet"/>
 
+<!--jquery cdn-->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
 
 <style type="text/css">
 
@@ -32,7 +37,7 @@ body{
 </head>
 
 <body>
-
+<div id="top-page"></div>
 <!--navigation bar-->
 <ul class="menu">
 	<li><img class="menu-icon" src="images/logo-with-name.png" width="30px" onClick="Redirect();"/></li>
@@ -110,6 +115,10 @@ body{
 	function closeNav(){
 		document.getElementById("mobile-sidenav").style.width = "0%";
 	}
+
+	$(window).scroll(function(e){
+		$("#hamburger-nav").css("position","absolute");
+	});
 
 </script>
 
