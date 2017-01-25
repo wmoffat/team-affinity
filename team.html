@@ -82,6 +82,8 @@ body{
 	<a href="index.html">Home</a>
 	<a href="blog.html">Blog</a>
 	<a href="team.html">The Team</a>
+	<hr style="width:75%; border:1px solid #333333;"/>
+	<img src="images/logo-with-name.png" width="25%" style="display:block; margin:auto; text-align:center; padding-top:10px; opacity:0.5;"/>	
 </div>
 
 <!--mobile hamburger nav-->
@@ -167,6 +169,10 @@ body{
 	function closeNav(){
 		document.getElementById("mobile-sidenav").style.width = "0%";
 	}	
+
+	$(window).scroll(function(e){
+		$("#hamburger-nav").css("position","absolute");
+	});	
 
 </script>
 
